@@ -53,7 +53,7 @@
                           <a-box width="12.5" depth="1" height="14" color="#EF2D5E"
                                  position="0 7 0">
                           </a-box>
-                 
+                </a-entity> 
 
                 <a-entity>
                     <a-box animation="property:object3D.postion.z; to:340;
@@ -79,9 +79,50 @@
                                       delay:200; dur: 52000; easing: linear; loop:true"
                                       position="20 16 -80" color="white" opacity="0.5"
                                       width="8" depth="12" height="3">
-                    </a-box> 
+
+                    </a-box>
+                    
+                    <a-box animation = "property:object3D.position.z; to:120; delay:200; dur:50000;
+                                        easing:linear; loop:true" position="-20 18 -50" color="purple" opacity="0.8"
+                                        width="8" depth="12" height="3">
+                    </a-box>
+
+                    <a-box animation="property: object3D.position.z; to:120; delay:20000; dur:48000;"
+                                      position="26 20 -60" color="white" opacity="0.7" width="5"
+                                      depth="7" height="3">
+                    </a-box>
                 </a-entity>
+                
+
+                <a-entity rotation="-90 0 0">
+                    <a-plane
+                            animation="property:object3D.scale.y; from: 0.0001; to:1;
+                                       easing:easeOutCubic; delay: 600; dur:1000"
+                            width="12.5" height="20" position="0 0 0.1"
+                            pivot="0 -10 0" color="#21897C" scale="1 0.0001 1">
+                    </a-plane>
+
+
+                </a-entity>
+
+
+                <a-entity>
+                    <a-plane
+                            animation="property:object3D.position.y; to:0; dur:1600;
+                                       easing:easeOutCubic" width="30" height="30"
+                            color="#249889" rotation="-90 0 0" position="0 -40 0">
+                    </a-plane>
+                </a-entity>
+
+
             </a-entity>
+
+
+            <a-light type="directional" color="#FFF" intensity="0.45" position="4 2 1">
+            </a-light>
+
+            
+            <a-light type="ambient" color="#A8A8A8"></a-light>
         </a-scene>
     </body>
 </html>
